@@ -50,8 +50,8 @@ class BoardingService
 
         beta_testers = [{
           email: email,
-          first_name: first_name,
-          last_name: last_name
+          firstName: first_name,
+          lastName: last_name
         }]
 
         Spaceship::ConnectAPI.post_bulk_beta_tester_assignments(beta_group_id: beta_group_id, beta_testers: beta_testers)
